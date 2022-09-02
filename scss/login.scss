@@ -1,0 +1,103 @@
+// Importações
+@import 'reset';
+@import 'cores';
+@import 'animacoes';
+@import 'modulos';
+
+
+// Estilo Layout
+body {
+    background-image: -moz-radial-gradient(#fff, #ddd);
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('../img/personagens.png');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.modal-login {
+    width: 650px;
+    border-radius: 10px;
+    background-color: white;
+    background-image: url('../img/fundo-modal.png');
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .60);
+    margin: 20px;
+    text-align: center;
+    overflow: hidden;
+    animation: fade-up 1s forwards;
+
+    .wrapper-modal {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+
+    }
+
+    .icone-logo {
+        width: 120px;
+    }
+
+    .titulo {
+        font-size: 36px;
+
+        color: $corLaranja;
+        -webkit-text-stroke: black 1px;
+        margin-bottom: 25px;
+    }
+
+    .input {
+        // import modulos
+        max-width: 450px;
+    }
+
+    .btn-cadastrar {
+        // import modulos
+        max-width: 450px;
+    }
+
+
+    .rodape {
+        width: 100%;
+        height: 35px;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.607);
+        text-align: center;
+
+        .texto,
+        .link {
+            font-size: 11px;
+            color: #ccc;
+            font-weight: 400;
+            font-style: italic;
+            letter-spacing: 1px;
+            font-family: sans-serif;
+
+            .link {
+                margin-left: 5px;
+                font-size: 13px;
+                font-weight: 700;
+                letter-spacing: 1.5px;
+                font-family: sans-serif;
+                color: rgb(255, 255, 255);
+                font-style: normal;
+            }
+
+            i {
+                margin: 0 5px;
+                color: rgb(255, 255, 255);
+                font-size: 14px;
+            }
+        }
+
+    }
+}

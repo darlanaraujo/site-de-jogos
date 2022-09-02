@@ -1,0 +1,38 @@
+@import 'cores';
+
+// Fonte padrão
+@font-face {
+    font-family: 'jogos';
+    src: url('../fonts/NineteenNinetySeven-11XB.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'jogos';
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    
+    // Scroll
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: $corCinza;
+        border-left: 2px solid transparent;
+        border-right: 2px solid transparent;
+        border-radius: 5px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+        border-radius: 5px;
+    }
+
+ 
+}
