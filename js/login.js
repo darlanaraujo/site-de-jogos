@@ -1,6 +1,7 @@
 // Importação do BD
 import { setBanco } from "./bancoDados.js";
 import { getBanco } from "./bancoDados.js";
+import { limpaInput } from "./modulos.js";
 
 const dadosLogin = getBanco();
 const bancoDados = 'bd-login';
@@ -16,15 +17,11 @@ const txtNome = document.querySelector('#txtNome');
 const btnCadastrar = document.querySelector('#btnCadastrar');
 
 // Funções
-const limpaInput = () => {
-    const inputs = document.querySelectorAll('input');
-    inputs.forEach((input) => {
-        input.value = '';
-    });
-};
 
 const cadastrar = () => {
     const jogador = txtNome.value;
+
+    // jogador = jogador.trim();
     
     setLogin(jogador);
 
